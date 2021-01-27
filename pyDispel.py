@@ -3,9 +3,10 @@
 import subprocess as sp
 import json
 import sys
+import os
 
 
-DISPEL_PATH = "./dispel.exe"
+DISPEL_PATH = f"{os.path.dirname(__file__)}/dispel.exe"
 
 
 def disas(rom):
